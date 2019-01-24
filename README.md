@@ -1,3 +1,4 @@
+![unified modeling language](https://user-images.githubusercontent.com/16472674/51716014-158f0600-2009-11e9-92f5-fa12d678642b.png)
 # BankAccount
 This is a bank account project, which uses multiple inheritance.\
 Design a generic class to hold the following information about a bank account:\
