@@ -1,4 +1,3 @@
-![unified modeling language](https://user-images.githubusercontent.com/16472674/51716014-158f0600-2009-11e9-92f5-fa12d678642b.png)
 # BankAccount
 This is a bank account project, which uses multiple inheritance.\
 Design a generic class to hold the following information about a bank account:\
@@ -26,3 +25,6 @@ Next, design a checking account class, also derived from the generic account cla
   **o withdraw** : Before the base class function is called, this function will determine if a withdrawal (a check written) will cause the balance to go below $0. If the balance goes below $0, a service charge of $15 will be taken from the account. (The withdrawal will not be made.) If there isn’t enough in the account to pay the service charge, the balance will become negative and the customer will owe the negative amount to the bank.\
   **o monthlyProc** : Before the base class function is called, this function adds the monthly fee of $5 plus $0.10 per withdrawal (check written) to the base class variable that holds the monthly service charges.\
 Write a complete program that demonstrates these classes by asking the user to enter the amounts of deposits and withdrawals for a savings account and checking account. The program should display statistics for the month, including beginning balance, total amount of deposits, total amount of withdrawals, service charges, and ending balance.
+
+# UML \
+![unified modeling language](https://user-images.githubusercontent.com/16472674/51716014-158f0600-2009-11e9-92f5-fa12d678642b.png)
