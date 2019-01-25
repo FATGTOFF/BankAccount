@@ -6,6 +6,7 @@ Number of deposits this month\
 Number of withdrawals\
 Annual interest rate\
 Monthly service charges\
+## Account Class (Base Class)
 The class should have the following member functions:\
   **o Constructor** : Accepts arguments for the balance and annual interest rate.\
   **o deposit** : A virtual function that accepts an argument for the amount of the deposit. The function should add the argument to the account balance. It should also increment the variable holding the number of deposits.\
