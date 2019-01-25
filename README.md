@@ -28,3 +28,5 @@ Write a complete program that demonstrates these classes by asking the user to e
 
 # UML 
 ![unified modeling language](https://user-images.githubusercontent.com/16472674/51716014-158f0600-2009-11e9-92f5-fa12d678642b.png)
+# Output Example
+![output image](https://user-images.githubusercontent.com/16472674/51778638-d88e4680-20d0-11e9-9b47-64fc6755d90a.gif)
