@@ -8,7 +8,7 @@ Number of withdrawals\
 Annual interest rate\
 Monthly service charges\
 The class should have the following member functions:\
-  **- Constructor** : Accepts arguments for the balance and annual interest rate.\
+  **- constructor** : Accepts arguments for the balance and annual interest rate.\
   **- deposit** : A virtual function that accepts an argument for the amount of the deposit. The function should add the argument to the account balance. It should also increment the variable holding the number of deposits.\
   **- withdraw** : A virtual function that accepts an argument for the amount of the withdrawal. The function should subtract the argument from the balance. It should also increment the variable holding the number of withdrawals.\
   **- calcInt** : A virtual function that updates the balance by calculating the monthly interest earned by the account, and adding this interest to the balance. This is performed by the following formulas:\
