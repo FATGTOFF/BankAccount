@@ -1,5 +1,5 @@
 # BankAccount
-This is a bank account project, which uses multiple inheritance.
+This is a bank account project, which uses inheritance.
 ## Account Class (Base Class)
 Design a generic class to hold the following information about a bank account:\
 Balance\
