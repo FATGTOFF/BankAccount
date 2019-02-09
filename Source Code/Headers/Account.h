@@ -7,7 +7,7 @@ class Account
 {
 	private:
 		double beginningBalance;
-		virtual void calcInt();
+		void calcInt();
 		
 	protected:
 		double balance;

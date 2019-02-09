@@ -3,11 +3,13 @@
 #include "Account.h"
 #include "CheckingsAccountMenu.h"
 
+using USHORT = unsigned short int;
+
 class CheckingAccount : public Account, public CheckingsAccountMenu
 {
 	private:
 		double serviceCharge;
-		int overdraftCounter;
+		USHORT overdraftCounter;
 
 	public:
 		CheckingAccount();
