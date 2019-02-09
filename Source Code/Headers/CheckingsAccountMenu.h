@@ -6,7 +6,7 @@ using USHORT = unsigned short int;
 class CheckingsAccountMenu
 {
 	private:
-		int choice;
+		USHORT choice;
 
 	public:
 		CheckingsAccountMenu();
