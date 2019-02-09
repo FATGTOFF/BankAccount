@@ -1,18 +1,18 @@
 #ifndef CHECKINGSACCOUNTMENU_H
 #define CHECKINGSACCOUNTMENU_H
 
-typedef unsigned int UINT;
+using USHORT = unsigned short int;
 
-class CheckingsAccountMenu 
+class CheckingsAccountMenu
 {
-private:
-	int choice;
+	private:
+		int choice;
 
-public:
-	CheckingsAccountMenu();
+	public:
+		CheckingsAccountMenu();
 
-	void displayMenu();
-	UINT getChoice() const;
+		void displayMenu();
+		USHORT getChoice() const;
 
 };
 #endif

@@ -1,7 +1,7 @@
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 
-typedef unsigned int UINT;
+using USHORT = unsigned short int;
 
 class Account
 {
@@ -11,8 +11,8 @@ class Account
 		
 	protected:
 		double balance;
-		UINT numOfDeposit;
-		UINT numOfWithdrawals;
+		USHORT numOfDeposit;
+		USHORT numOfWithdrawals;
 		double annualInterestRate;
 		double monthlyServiceCharges;
 		double withdrawalAmount;

@@ -1,8 +1,9 @@
 #ifndef CHECKINGACCOUNT_H
 #define CHECKINGACCOUNT_H
 #include "Account.h"
+#include "CheckingsAccountMenu.h"
 
-class CheckingAccount : public Account
+class CheckingAccount : public Account, public CheckingsAccountMenu
 {
 	private:
 		double serviceCharge;

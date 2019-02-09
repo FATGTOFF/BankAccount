@@ -1,16 +1,16 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
 
-typedef unsigned int UINT;
+using USHORT = unsigned short int;
 
 class MainMenu
 {
 	private:
-		UINT choice;
+		USHORT choice;
 
 	public:
 		MainMenu();
-		UINT getChoice() const;
+		USHORT getChoice() const;
 		void displayMenu();
 };
 #endif

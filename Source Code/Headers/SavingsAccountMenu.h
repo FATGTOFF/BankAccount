@@ -1,18 +1,18 @@
 #ifndef SAVINGSACCOUNTMENU_H
 #define SAVINGSACCOUNTMENU_H
 
-typedef unsigned int UINT;
+using USHORT = unsigned short int;
 
 class SavingsAccountMenu
 {
 	private:
-		int choice;
+		USHORT choice;
 
 	public:
 		SavingsAccountMenu();
 
 		void displayMenu();
-		UINT getChoice() const;
+		USHORT getChoice() const;
 
 };
 #endif

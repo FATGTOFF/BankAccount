@@ -1,8 +1,9 @@
 #ifndef SAVINGSACCOUNT_H
 #define SAVINGSACCOUNT_H
 #include "Account.h"
+#include "SavingsAccountMenu.h"
 
-class SavingsAccount : public Account
+class SavingsAccount : public Account , public SavingsAccountMenu
 {
 	private:
 		bool status; // To represent active or inactive account.
