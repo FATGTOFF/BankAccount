@@ -31,6 +31,6 @@ If the balance of a savings account falls below $25, it becomes inactive. (The s
 Write a complete program that demonstrates these classes by asking the user to enter the amounts of deposits and withdrawals for a savings account and checking account. The program should display statistics for the month, including beginning balance, total amount of deposits, total amount of withdrawals, service charges, and ending balance.
 
 # UML 
-![unified modeling language](https://user-images.githubusercontent.com/16472674/51716014-158f0600-2009-11e9-92f5-fa12d678642b.png)
+![uml 9feb19](https://user-images.githubusercontent.com/16472674/52526378-46b03d00-2c7d-11e9-8297-fe410b851df3.png)
 # Output Example
 ![output image](https://user-images.githubusercontent.com/16472674/51778638-d88e4680-20d0-11e9-9b47-64fc6755d90a.gif)
