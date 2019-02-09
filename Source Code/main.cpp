@@ -3,16 +3,12 @@
 #include "SavingsAccount.h"
 #include "CheckingAccount.h"
 #include "MainMenu.h"
-#include "SavingsAccountMenu.h"
-#include "CheckingsAccountMenu.h"
 
-typedef unsigned int UINT;
+using USHORT = unsigned short int;
 
-void mainMenu(MainMenu&, SavingsAccountMenu&, 
-CheckingsAccountMenu&, SavingsAccount&, 
-CheckingAccount&, UINT);
-void savingsMenu(SavingsAccountMenu&, SavingsAccount&, UINT);
-void checkingMenu(CheckingsAccountMenu&, CheckingAccount&, UINT);
+void mainMenu(MainMenu&, SavingsAccount&, CheckingAccount&, USHORT);
+void savingsMenu(SavingsAccount&, USHORT);
+void checkingMenu(CheckingAccount&, USHORT);
 double makeDeposit();
 double makeWithdrawal();
 void displayStatistics(SavingsAccount);
@@ -21,21 +17,17 @@ void displayStatistics(CheckingAccount);
 int main()
 {
 	MainMenu mainMenuObj;
-	SavingsAccountMenu savingsMenuObj;
-	CheckingsAccountMenu checkingsMenuObj;
 	SavingsAccount savingsAcctObj(200, 12);
 	CheckingAccount checkingAcctObj(500);
 
 	std::cout << std::fixed << std::setprecision(2);
 
-	mainMenu(mainMenuObj, savingsMenuObj, checkingsMenuObj,
-	savingsAcctObj, checkingAcctObj, mainMenuObj.getChoice());
+	mainMenu(mainMenuObj, savingsAcctObj, checkingAcctObj, mainMenuObj.getChoice());
 
 	return 0;
 }
-void mainMenu(MainMenu& mainMenuObj, SavingsAccountMenu& savingsMenuObj,
-	CheckingsAccountMenu& checkingsMenuObj, SavingsAccount& savingsAcctObj, 
-	CheckingAccount& checkingAcctObj, UINT choice)
+void mainMenu(MainMenu& mainMenuObj, SavingsAccount& savingsAcctObj, 
+	CheckingAccount& checkingAcctObj, USHORT choice)
 {
 	bool keepLooping{true};
 
@@ -46,12 +38,12 @@ void mainMenu(MainMenu& mainMenuObj, SavingsAccountMenu& savingsMenuObj,
 		switch (mainMenuObj.getChoice())
 		{
 			case 1:
-				savingsMenu(savingsMenuObj, savingsAcctObj, choice);
+				savingsMenu(savingsAcctObj, choice);
 				keepLooping = true;
 				break;
 
 			case 2:
-				checkingMenu(checkingsMenuObj,checkingAcctObj, choice);
+				checkingMenu(checkingAcctObj, choice);
 				keepLooping = true;
 				break;
 
@@ -67,15 +59,15 @@ void mainMenu(MainMenu& mainMenuObj, SavingsAccountMenu& savingsMenuObj,
 	}
 }
 
-void savingsMenu(SavingsAccountMenu& savingsMenuObj, SavingsAccount& accountObj, UINT choice)
+void savingsMenu(SavingsAccount& accountObj, USHORT choice)
 {
 	bool keepLooping{true};
 	
 	while (keepLooping)
 	{
-		savingsMenuObj.displayMenu();
+		accountObj.displayMenu();
 
-		switch (savingsMenuObj.getChoice())
+		switch (accountObj.getChoice())
 		{
 			case 1:
 				accountObj.deposit(makeDeposit());
@@ -103,15 +95,15 @@ void savingsMenu(SavingsAccountMenu& savingsMenuObj, SavingsAccount& accountObj,
 	}
 }
 
-void checkingMenu(CheckingsAccountMenu& checkingsMenuObj, CheckingAccount& accountObj, UINT choice)
+void checkingMenu(CheckingAccount& accountObj, USHORT choice)
 {
 	bool keepLooping{ true };
 
 	while (keepLooping)
 	{
-		checkingsMenuObj.displayMenu();
+		accountObj.displayMenu();
 
-		switch (checkingsMenuObj.getChoice())
+		switch (accountObj.getChoice())
 		{
 		case 1:
 			accountObj.withdraw(makeWithdrawal());
