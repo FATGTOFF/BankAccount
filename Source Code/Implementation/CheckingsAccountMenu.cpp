@@ -14,9 +14,10 @@ void CheckingsAccountMenu::displayMenu()
 		<< "3. Return to Main Menu\n"
 		<< "Please, make a selection: ";
 	std::cin >> choice;
+
 }
 
-UINT CheckingsAccountMenu::getChoice() const
+USHORT CheckingsAccountMenu::getChoice() const
 {
 	return choice;
 }

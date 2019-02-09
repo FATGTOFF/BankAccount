@@ -1,6 +1,6 @@
 #include "SavingsAccount.h"
 
-SavingsAccount::SavingsAccount() : Account()
+SavingsAccount::SavingsAccount() : Account(), SavingsAccountMenu()
 {
 	status = false;
 	depositAmount = 0.0;

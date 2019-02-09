@@ -1,6 +1,6 @@
 #include "CheckingAccount.h"
 
-CheckingAccount::CheckingAccount() : Account()
+CheckingAccount::CheckingAccount() : Account(), CheckingsAccountMenu()
 {
 	serviceCharge = 15;
 	overdraftCounter = 0;

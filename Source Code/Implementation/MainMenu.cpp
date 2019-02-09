@@ -6,7 +6,7 @@ MainMenu::MainMenu()
 	choice = 0;
 }
 
-UINT MainMenu::getChoice() const
+USHORT MainMenu::getChoice() const
 {
 	return choice;
 }
@@ -21,4 +21,3 @@ void MainMenu::displayMenu()
 	std::cin >> choice;
 	
 }
-

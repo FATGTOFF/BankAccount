@@ -14,10 +14,12 @@ void SavingsAccountMenu::displayMenu()
 		<< "3. Display Statistics for the Month\n"
 		<< "4. Return to Main Menu\n"
 		<< "Please, make a selection: ";
+
 	std::cin >> choice;
+
 }
 
-UINT SavingsAccountMenu::getChoice() const
+USHORT SavingsAccountMenu::getChoice() const
 {
 	return choice;
 }
