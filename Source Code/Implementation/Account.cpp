@@ -127,6 +127,11 @@ double Account::getInterestRate() const
 	return annualInterestRate;
 }
 
+double Account::getMonthlyServiceCharges() const
+{
+	return monthlyServiceCharges;
+}
+
 double Account::getTotalServiceCharges() const
 {
 	return monthlyServiceCharges;
