@@ -32,7 +32,7 @@ class Account
 		double getBalance() const;
 		double getWithdrawalAmount() const;
 		double getInterestRate() const;
-
+		double getMonthlyServiceCharges() const;
 
 };
 #endif
